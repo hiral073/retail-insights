@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": ["${CLAUDE_PROJECT_DIR}/checks/run_checks.py", "--hook"],
+            "timeout": 120,
+            "statusMessage": "Running retail data checks"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+# Environment and secrets
+.venv/
+.env
+.claude/settings.local.json
+
+# Data: download the workbook, then rebuild the database (see README)
+online_retail_II.xlsx
+retail.db
+retail.db.partial
+# Excel lock files, which contain the Windows user name
+~$*
+
+# Caches
+__pycache__/
+.pytest_cache/

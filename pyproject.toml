@@ -1,0 +1,13 @@
+[project]
+name = "retail-insights"
+version = "0.1.0"
+description = "Load the Online Retail II dataset into SQLite."
+requires-python = ">=3.10"
+dependencies = ["openpyxl>=3.1"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
